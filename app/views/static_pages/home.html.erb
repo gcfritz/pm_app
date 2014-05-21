@@ -1,5 +1,12 @@
 <% provide(:title, 'Home') %>
-<h1>PM Backlog Application</h1>
-<p>
-  Welcome to the backlog Application for PAV PMs - spread the product love!
-</p>
+<div class="center hero-unit">
+  <h1>PM Backlog Application</h1>
+
+  <h2>
+    Welcome to the backlog Application for PAV PMs - spread the product love!</br>
+  </h2>
+
+  <%= link_to "Sign up now!", 'signup_path', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("logo.png", alt: "PM App"), '/home' %>
