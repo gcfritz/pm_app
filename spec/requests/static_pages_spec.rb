@@ -14,7 +14,6 @@ describe "Static pages" do
 	    let(:heading)    { 'PM App' }
 	    let(:page_title) { '' }
 
-	    it_should_behave_like "all static pages"
 	    it { should_not have_title('| Home') }
 	end
 
@@ -45,7 +44,7 @@ describe "Static pages" do
 		    expect(page).to have_title(full_title('Help'))
 		    click_link "Home"
 		    click_link "Sign up now!"
-		    expect(page).to have_title(full_title('Home'))
+		    expect(page).to have_title('')
 		end
 	end
 end
